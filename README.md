@@ -29,8 +29,6 @@ Here's a video / GIF that demos all of the app's implemented features:
 
 <img src='./AND101-project1-MaximilianoOvalle.gif' title='Video Demo' width='' alt='Video Demo' />
 
-GIF created with **your chosen GIF tool**
-
 ## Notes
 
 I learned that most of what I edit is under very few of the files present in this app - mainly MainActivity, strings.xml, and activity_main.xml. There's no need to feel overwhelmed by all the directories and files present.
