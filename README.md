@@ -23,15 +23,11 @@ The following STRETCH features are implemented:
 - [x] Re-brand the app by modifying the UI
 - [ ] Modify the profile image by uploading a new image drawable
 
-The following EXTRA features are implemented:
-
-- [ ] List anything else that you added to improve the app!
-
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='./AND101-project1-MaximilianoOvalle.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with **your chosen GIF tool**
 
