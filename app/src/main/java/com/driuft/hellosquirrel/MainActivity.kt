@@ -9,12 +9,15 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 
+// defines main screen shown when app launches
 class MainActivity : AppCompatActivity() {
 
+    // will point to elements in layout, "lateinit" means will be initialized later before use
     private lateinit var profileImage: ImageView
     private lateinit var profileName: TextView
     private lateinit var profileBio: TextView
 
+    // called when activity starts
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,21 +26,26 @@ class MainActivity : AppCompatActivity() {
         setupProfile()
     }
 
+    // finds ui elements and binds to previously created elements
     private fun configureViews() {
         profileImage = findViewById(R.id.profile_image)
         profileName = findViewById(R.id.profile_name)
         profileBio = findViewById(R.id.profile_bio)
     }
 
+    // calls helper methods
     private fun setupProfile() {
         configureImage()
         configureName()
     }
 
+    // loads drawable and sets it as image for ImageView
     private fun configureImage() {
-        profileImage.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.ic_launcher_foreground))
+        // R.drawable.[res/drawable/filename]
+        profileImage.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.avatar_10))
     }
 
+    // gets strings from res/values/strings.xml
     private fun configureName() {
         profileName.text = getString(
             R.string.full_name,
